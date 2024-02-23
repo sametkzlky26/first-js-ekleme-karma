@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(241, 231, 210);
+    color: rgb(117, 10, 10);
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    text-transform: capitalize;
+    background-image: url(/1037943546_0_0_3000_2250_1920x0_80_0_0_dd4af23cccbd57ecd3812b3e94727e71.jpg);
+
+}
+
+h1,h2,h3,h4{
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Robota",sans-serif;
+
+}
+
+h1{font-size: 48px;}
+
+h2{font-size: 32px;}
+h3{font-size: 20px;};
+
+p{
+    margin-bottom: 20px;
+    color: rgb(108, 110, 110);
+}
+.section-center{
+    border: 1px solid red;
+    width: 90vw;
+    max-width: 560px;
+    
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(94, 3, 3);
+    padding: 32px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 60vw;
+    
+}
+.section-center:hover{
+    box-shadow: 0 5px 15px  rgba(204, 87, 87, 0.5);
+    transition: all .3s;
+}
+
+.alert{
+   /*  border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing:4px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.alert.alert-danger{
+    color: brown;
+    padding: 10px;
+    color: rgb(56, 104, 8);
+    background: #fff;
+}
+.alert.alert-succes{
+    color: brown;
+    padding: 10px;
+    color: rgb(241, 74, 7);
+    background: #fff;
+}
+
+.grocery-form h3{
+    text-align: center;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+}
+#grocery{
+    padding: 4px;
+    padding-left: 15px;
+    background: rgb(177, 175, 175);
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+    border-color: transparent;
+    font-size: 16px;
+    flex: 1 0 auto;
+    color: rgb(0, 3, 156);
+    
+}
+
+#grocery::placeholder{
+    font-family: "Comic Sans",sans-serif;
+    color:#000000;
+}
+
+.submit-btn{
+    background: #df9f9f;
+    border-color: transparent;
+    flex: 0 0 80px;
+    place-items: center;
+    padding: 4px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: 14px;
+}
+
+.submit-btn:hover{
+    background: red;
+    color: wheat;
+    transition: all .3s;
+}
+
+.grocery-container{
+    margin-top: 32px;
+    /* visibility: hidden; */
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-bottom: 8px;
+    padding: 4px 16px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.grocery-item:hover{
+    background:rgb(177, 171, 177);
+    color: rgb(5, 23, 105);
+}
+.grocery-item:hover .title{
+    color: blue;
+}
+
+.title{
+    margin-bottom: 0;
+    color: #0e0303;
+    letter-spacing: 2px;
+    transition: all .3s;
+}
+
+.edit-btn,.delete-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all .3s;
+}
+
+.edit-btn{
+    color: rgb(159, 36, 230);
+}
+.edit-btn:hover{
+    color: rgb(31, 3, 3);
+}
+
+.delete-btn{
+    color: red;
+}
+.delete-btn:hover{
+    color: darkred;
+}
+
+.clear-btn{
+    text-transform: capitalize;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: transparent;
+    margin: 0 auto;
+    color: rgb(73, 21, 126);
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+
+}
+
+.clear-btn:hover{
+    color: red;
+    cursor: pointer;
+}
